@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+.header {
+	background: url(../images/hero-bg.jpg);
+	background-position:top center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	cursor: default;
+}
+
+.header__logo {
+	height: 70px;
+	width: 70px;
+	fill: #fff;
+	margin: 0 auto 75px;
+}
+
+.header__title {
+	font-size: 54px;
+	font-weight: bold;
+	letter-spacing: 8.64px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0 auto 50px;
+	text-transform: uppercase;
+}
+
+.header__description {
+	width: 579px;
+	font-size: 15px;
+	line-height: 1.93;
+	letter-spacing: 0.9px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0 auto ;
+	text-transform: uppercase;
+}
+
+.scroll {
+	display: block;
+	margin: 245px auto 0;
+}
+.header__scroll {
+	width: 23px;
+	height: 37px;
+	fill: #fff;
+	transition: all.3s;
+}
+
+.header__scroll:hover {
+	transform: scale(1.13);
+	fill: rgb(102, 100, 100);
+	cursor: pointer;
+}
+
+.container{
+	width: 905px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.text {
+	margin: 60px 0;
+	border: solid 2px #3c3c3c;
+	border-top:  0;
+	text-align: center;
+	color: #3c3c3c;
+}
+
+.text__title {
+	display: inline-block;
+	transform: translateY(-14px);
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 5.44px;
+	text-transform: uppercase;
+}
+.text__title::after,
+.text__title::before{
+	content: "";
+	width: 282.5px;
+	height: 2px;
+	display: inline-block;
+	background: #3c3c3c;
+	margin-bottom: 14px;
+
+}
+.text__title::before{
+	margin-right: 50px;
+}
+
+.text__title::after{
+	margin-left: 50px;
+}
+
+.text__description {
+	width: 550px;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 45px auto 30px;
+}
+
+.services {
+	background: url(../images/services.jpg) no-repeat;
+	background-position:top center;
+}
+
+.text--services {
+	color: #fff;
+	border-color: #fff;
+	margin: 20px 0;
+}
+
+.text__title--services::before{
+	margin-right: 56.5px;
+	background: #fff;
+}
+
+.text__title--services::after{
+	margin-left: 56.5px;
+	background: #fff;
+} 
+
+.text__icon {
+	width: 85px;
+	height: 85px;
+	fill:#3c3c3c;
+	margin: 100px 0 35px;
+}
+
+
+.text__title--what::before{
+	margin-right: 16.5px;
+}
+
+.text__title--what::after{
+	margin-left: 16.5px;
+} 
+
+
+
+
+
+.label {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 5.44px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.label__line {
+	width: 100%;
+	height: 237px;
+	display: flex;
+}
+
+.label__container, .label__container-1 {
+	margin: 5px ;
+	padding-top: 160px;
+	padding-left: 45px;
+}
+
+.label__container:nth-child(1) {
+	background: url(../images/label1.jpg);
+	width: 28.5%;
+
+}
+
+.label__container:nth-child(2) {
+	background: url(../images/label2.jpg);
+	width: 41.5%;
+
+}
+
+.label__container:nth-child(3) {
+	background: url(../images/label3.jpg);
+	width: 28.5%;
+
+}
+
+.label__container-1:nth-child(1) { 
+	background: url(../images/label4.jpg);
+	width: 28.5%;
+
+}
+
+.label__container-1:nth-child(2) {
+	background: url(../images/label5.jpg);
+	width: 41.5%;
+
+}
+
+.label__container-1:nth-child(3) {
+	background: url(../images/label6.jpg);
+	width: 28.5%;
+
+}
+
+.text__title--contact::before, .text__title--contact::after {
+	width: 256.5px;
+}
+
+.text__button {
+	width: 395px;
+	height: 58px;
+	border: solid 2px #3c3c3c;
+	background-color: #3c3c3c;
+	font-size: 16px;
+	letter-spacing: 2.56px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.text__button:hover {
+	border: solid 2px #3c3c3c;
+	background-color: #fff;
+	color: #3c3c3c;
+}
+
+footer>p {
+	font-size: 14px;
+	color: #3c3c3c;
+	margin-left: 35px;
+}
+
+.footer__logo {
+	width: 35px;
+	height: 35px;
+	fill:#3c3c3c;
+
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+}
